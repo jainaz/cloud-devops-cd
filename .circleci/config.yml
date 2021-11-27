@@ -83,5 +83,6 @@ workflows:
     jobs:
       - create_infrastructure
       - rollback:
-          requires: create_infrastructure
+          requires: 
+            - create_infrastructure
 
