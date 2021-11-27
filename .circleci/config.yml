@@ -82,4 +82,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - create_infrastructure
-      - rollback
+      - rollback:
+          requires: create_infrastructure
+
